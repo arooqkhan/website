@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .banner-section {
+        overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+        .banner-overlay h2 {
+            font-size: 1.8rem;
+        }
+
+        .banner-overlay p {
+            font-size: 1rem;
+        }
+
+        .banner-overlay .btn {
+            font-size: 0.9rem;
+            padding: 0.5rem 1.2rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .banner-overlay h2 {
+            font-size: 1.5rem;
+        }
+
+        .banner-overlay p {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+
 </head>
 <body>
 
@@ -34,15 +65,15 @@
         <p class="lead">Empowering your digital journey with top-tier solutions and cutting-edge technology.</p>
     </div>
 
- <!-- Banner Section -->
-    <div class="banner-section" style="position: relative; margin-bottom: 50px;">
-        <img src="images/15.jpg" class="img-fluid w-100" alt="Banner Image">
-        <div class="banner-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;">
-            <h2 class="display-4 fw-bold">Take Your Business to the Next Level</h2>
-            <p class="lead">Join us today and experience innovative digital solutions tailored for your success.</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-3">Get Started</a>
-        </div>
+<!-- Banner Section -->
+<div class="banner-section position-relative mb-5">
+    <img src="images/15.jpg" class="img-fluid w-100" alt="Banner Image" style="object-fit: cover; height: auto; max-height: 600px;">
+    <div class="banner-overlay position-absolute top-50 start-50 translate-middle text-white text-center px-3">
+        <h2 class="display-5 fw-bold">Take Your Business to the Next Level</h2>
+        <p class="lead">Join us today and experience innovative digital solutions tailored for your success.</p>
+        <a href="#contact" class="btn btn-primary btn-lg mt-3">Get Started</a>
     </div>
+</div>
 
     <div class="row mb-5 align-items-center">
         <div class="col-md-6">
